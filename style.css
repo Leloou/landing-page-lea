@@ -1,0 +1,174 @@
+body{
+    background-color: white;
+    color: #444444;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+}
+
+h1{
+    font-size: 45px;
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+h2{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 29.5px;
+    text-align: center;
+
+}
+
+
+h3{
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    color: #E03136;
+}
+
+.btn-red{
+    background-color: #E03136;
+    color: white;
+    text-decoration: none;
+    padding: 20px 50px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.btn-red:hover{
+    color: #E03136;
+    background-color:#444444;
+    ;
+}
+
+
+.banner{
+    padding: 150px 0;
+    margin: 0;
+    background-image: url(Images/Back-retouche.jpeg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#banner-p {
+    color: white;
+    font-size: 24px;
+    font-weight: 400px;
+    margin-bottom: 50px;
+}
+
+.container{
+    width: 900px;
+    margin: 50px auto;
+}
+
+.card-white{
+    background-color: white;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin: 8px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.card-white-img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2)
+}
+
+.footer{
+    background: #404042;
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.fond-logo{
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin: 8px;
+}
+
+.card-logo{
+    padding: 5px;
+    text-align: center;
+    margin: 8px;
+}
+
+.fond-logo-bis{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    margin: 8px;
+}
+
+.card-white-img-bis{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+#picto {
+    text-align: center;
+}
+
+#humain {
+    width: 82px;
+    height: 90px;
+}
+
+@media screen and (max-width:960px) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .fond-logo{
+        grid-template-columns: 1fr 1fr; 
+    }
+    .container{
+        width: 700px;
+    }
+}   
+
+
+@media screen and (max-width:600px) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .fond-logo{
+        grid-template-columns: 1fr 1fr; 
+    }
+    .container{
+        width: 400px;
+    }
+}   
+
+
+@media screen and (max-width:300px) {
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .fond-logo{
+        grid-template-columns: 1fr; 
+    }
+    .container{
+        width: 200px;
+    }
+}   
